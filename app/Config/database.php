@@ -57,39 +57,11 @@ class DATABASE_CONFIG {
 	
 	public $default = array(
         'datasource' => 'Mongodb.MongodbSource',
-        'host' => 'localhost',
-        'database' => 'blog',
-        'port' => 27017,
-        'prefix' => '',
+        'host' => '10.0.5.80',
+        'database' => 'db',
+        'port' => 25820,
         'persistent' => 'true',
-        /* optional auth fields
-        'login' => 'mongo', 
-        'password' => 'awesomeness',
-        'replicaset' => array('host' => 'mongodb://hoge:hogehoge@localhost:27021,localhost:27022/blog', 
-                              'options' => array('replicaSet' => 'myRepl')
-                     ),
-        */
+        'login' => '8afc11c6-0bb7-4a60-9421-d2c6ca72da7b', 
+        'password' => '12e07fc9-b2fa-4058-8f5c-1fbfbe67e566'       
     );
-
-	// public $default = array(
-	// 	'datasource' => 'Database/Mysql',
-	// 	'persistent' => false,
-	// 	'host' => 'localhost',
-	// 	'login' => 'user',
-	// 	'password' => 'password',
-	// 	'database' => 'database_name',
-	// 	'prefix' => '',
-	// 	//'encoding' => 'utf8',
-	// );
-
-	public $test = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
 }
